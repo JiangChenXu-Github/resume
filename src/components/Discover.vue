@@ -73,7 +73,7 @@ export default {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
   height: 19.5vw;
@@ -113,7 +113,7 @@ export default {
         width: 100vw;
         overflow: hidden;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         img {
           width: auto;
           height: 20vh;

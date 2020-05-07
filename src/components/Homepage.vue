@@ -90,7 +90,7 @@ export default {
 .background {
     display: flex;
     overflow: hidden;
-    justify-content: space-evenly;
+    justify-content: space-around;
     img {
         height: 60vh;
     }

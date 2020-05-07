@@ -9,7 +9,7 @@
     </div>
     <van-tabs class="top-bar" v-model="active" animated swipeable color="#14b9c8" line-width="5vw" title-active-color="#14b9c8">
       <van-tab v-for="item in topBarData" :title="item.name" :key="item.id">
-        <div class="top-bar-content">{{item.id}}</div>
+        <my-rank-common></my-rank-common>
       </van-tab>
     </van-tabs>
   </div>
@@ -36,7 +36,7 @@ export default {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 19.5vw;

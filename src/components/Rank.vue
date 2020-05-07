@@ -7,9 +7,9 @@
         <div class="top-right-right"><i class="iconfont icon-sousuo" /></div>
       </div>
     </div>
-    <van-tabs class="top-bar" v-model="active" animated swipeable color="#14b9c8" line-width="5vw" title-active-color="#14b9c8">
-      <van-tab v-for="item in topBarData" :title="item.name" :key="item.id">
-        <div class="top-bar-content">{{item.id}}</div>
+    <van-tabs class="top-bar" v-model="active" animated lazy-render swipeable color="#14b9c8" line-width="5vw" title-active-color="#14b9c8">
+      <van-tab class="top-bar-content" v-for="item in topBarData" :title="item.name" :key="item.id">
+        <my-rank-common></my-rank-common>
       </van-tab>
     </van-tabs>
   </div>
@@ -38,7 +38,7 @@ export default {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 19.5vw;
@@ -69,7 +69,8 @@ export default {
   width: 100vw;
   .top-bar-content {
     width: 100vw;
-    height: 20vh;
+    height:74.5vh;
+    overflow-y: scroll;
   }
 }
 </style>

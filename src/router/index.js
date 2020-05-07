@@ -6,11 +6,14 @@ import Discover from "../components/Discover.vue"
 import Forum from "../components/Forum.vue"
 import Rank from "../components/Rank.vue"
 import MyGame from "../components/MyGame.vue"
+import Resume from "../views/Resume.vue"
+import Tap from "../components/Tap.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
-  {path: '/', redirect: '/homepage'},
+  {path: '/', redirect: '/resume'},
+  {path: '/resume', component: Resume},
   {path: '/', component: View, children: [
       {path: '/homepage', component: Homepage},
       {path: '/discover', component: Discover},
